@@ -10,8 +10,8 @@ PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python python3 src/download_data/madis/do
 --runner=DataflowRunner \
 --gcs_project \
 --job_name=madisdownload \
---region=us-central1 \
---temp_location=gs://dftemp/tmp \
---experiments=use_runner_v2 \
---num_workers 20 \
+--region \
+--temp_location \
+--experiments \
+--num_workers 2 \
 --autoscaling_algorithm=NONE
